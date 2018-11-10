@@ -28,6 +28,6 @@ function setupColumns(columns) {
 function setupCards(createdColumn, cards) {
 	cards.forEach(function(card) {
 		var cardObject = new Card(card.id, card.name, card.bootcamp_kanban_column_id);
-		createdColumn.createCard(cardObject);	
+		createdColumn.addCard(cardObject);	
 	});
 }
