@@ -4,9 +4,12 @@
 }
 
 body {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   background-color: #202a34;
   text-transform: uppercase;
@@ -27,10 +30,14 @@ body {
 .board {
   margin: 80px;
   padding: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-self: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
   max-width: 50%;
   min-height: 100vh;
@@ -76,10 +83,14 @@ body {
 
 /* ---------- Column ---------- */
 .column-container {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .column-container .column {
@@ -98,8 +109,10 @@ body {
 .column-container .column-card-list {
   margin: 0px;
   padding: 0px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   list-style-type: none;
   cursor: pointer;
 }
@@ -135,9 +148,12 @@ body {
 
 /* ---------- Card ---------- */
 .card {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: 0 auto;
   padding: 15px;
 }
@@ -149,8 +165,10 @@ body {
 }
 
 .card p {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   text-align: center;
   text-transform: none;
   color: #FFF;
@@ -186,5 +204,4 @@ body {
 .btn-delete-board:hover {
   opacity: 1;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */
